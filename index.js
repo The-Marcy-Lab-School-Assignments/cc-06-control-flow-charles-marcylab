@@ -1,19 +1,37 @@
 //1
 function sumOfThreeAndFive(){
-  
+    let sum = 0
+    for(let i = 0; i <= 1000; i++){
+        if(i % 3 == 0 || i % 5 == 0){
+            sum += i
+        }
+    }
+    return sum 
 }
 
-function greaterNum(){
-  
+console.log(sumOfThreeAndFive())
+
+function greaterNum(num1, num2){
+    if (num1 > num2){
+        return num1;
+    }else if (num2 > num1){
+        return num2;
+    }else if (num1 === num2){
+      return "both integers are equal";
+    }else{
+        return null;
+    }
 }
 
-function oddAndEvenInFifteen(){
-  
-}
+console.log(greaterNum(8, "hap"))
 
-function sortThreeNums(){
+// function oddAndEvenInFifteen(){
+
+// }
+
+// function sortThreeNums(){
   
-}
+// }
 
 
 
